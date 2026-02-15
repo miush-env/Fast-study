@@ -1,0 +1,112 @@
+<section class='flex items-center h-full'>
+	<section class='flex-1 flex flex-col gap-3'>
+		<h1 class='text-6xl font-semibold font-plex'>
+			En <span class='text-[#FC0228] uppercase'>Fast Study</span> ayudamos a transformar
+			tus ideas en proyectos digitales rápidos, claros y bien diseñados
+		</h1>
+		<p class='font-semibold text-gray-600 w-xl text-balance'>
+			En Fast Study analizamos tus ideas y objetivos a fondo para crear una web
+			hecha a medida, funcional y visualmente atractiva
+		</p>
+		<div class='flex items-center gap-6'>
+			<a
+				href='#'
+        id="cotizar"
+				class='border-2 font-plex uppercase font-semibold tracking-wide border-red-500 px-8 py-2 rounded-md'
+				>Cotizar</a
+			>
+			<a
+				href='#'
+        id="read-more"
+				class='bg-red-500 flex items-center gap-2 px-8 py-2 rounded-md font-plex uppercase font-semibold tracking-wide text-white'
+			>
+				<span> Leer mas </span>
+				<svg
+          id="arrow-down"
+					width='20'
+					height='20'
+					viewBox='0 0 24 24'
+					fill='currentColor'
+					class=''
+					><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path
+						d='M9 5l-.117 .007a1 1 0 0 0 -.883 .993v4.999l-2.586 .001a2 2 0 0 0 -1.414 3.414l6.586 6.586a2 2 0 0 0 2.828 0l6.586 -6.586a2 2 0 0 0 .434 -2.18l-.068 -.145a2 2 0 0 0 -1.78 -1.089l-2.586 -.001v-4.999a1 1 0 0 0 -1 -1h-6z'
+					></path><path
+						d='M15 2a1 1 0 0 1 .117 1.993l-.117 .007h-6a1 1 0 0 1 -.117 -1.993l.117 -.007h6z'
+					></path></svg
+				>
+			</a>
+		</div>
+	</section>
+	<section class='flex-1 justify-center flex container'>
+		<img src='/src/assets/644shots_so.png' alt='' id="panel-windows" />
+	</section>
+</section>
+
+<style>
+  #cotizar {
+    position: relative;
+    transition: border .2s .15s, color .5s .15s;
+  }
+
+  #cotizar:hover {
+    color: #fff;
+    border: transparent solid 2px;
+  }
+
+  #cotizar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fb2c36;
+    transition: clip-path .5s .15s,  border-radius .5s .15s  ;
+    clip-path: polygon(100% 100%, 100% 0, 100% 100%, 0% 100%)
+  }
+
+  #cotizar:hover::after{
+    border-radius: 5.625px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  #arrow-down {
+    animation: down-arrow 1s linear infinite;
+  }
+
+  #read-more:hover {
+    #arrow-down {
+      animation: none;
+    }
+  }
+ 
+  @keyframes down-arrow {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.container {
+  perspective: 70rem;
+}
+
+#panel-windows {
+  width: 45rem;
+  border-radius: 10px;
+  transform: rotateY(-20deg);
+  box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+  transition: transform .5s .15s ease;
+}
+
+#panel-windows:hover {
+
+  transform: rotateY(0deg);
+}
+</style>
