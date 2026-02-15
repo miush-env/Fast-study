@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.editorTheme": "One Dark Pro Flat",
+  "oneDarkPro.bold": true,
+  "editor.fontFamily": "Cascadia Code PL",
+  "editor.fontSize": 15
+}
