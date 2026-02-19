@@ -1,3 +1,7 @@
+---
+	import NavBar from '@components/NavBar.astro'
+---
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -9,7 +13,15 @@
 		<title>Fast Study</title>
 	</head>
 	<body>
+		<header class='fixed top-0 w-full z-10'>
+		<NavBar />
+		</header>
+
 		<slot />
+
+		<footer class="outline outline-gray-800">
+			<h2>Aqui estara el footer</h2>
+		</footer>
 	</body>
 </html>
 
