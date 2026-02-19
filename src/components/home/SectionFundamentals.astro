@@ -1,0 +1,55 @@
+---
+import CardFundamentals from './CardFundamentals.astro'
+---
+
+<section>
+	<div class='flex flex-col items-center'>
+		<h3 class='text-lg font-plex uppercase font-medium'>Fundamentos</h3>
+		<h2 class='text-3xl font-semibold'>Lo que nos define en cada proyecto</h2>
+		<span
+			>Trabajamos con claridad. Sin adornos innecesarios, solo lo que funciona y
+			produce resultados reales.</span
+		>
+	</div>
+	<div>
+		<ul
+			class=' grid gap-5 px-5
+           grid-cols-1
+           sm:grid-cols-2
+           lg:grid-cols-4'
+		>
+			<li>
+				<CardFundamentals
+					name='Velocidad'
+					details='Entregamos rápido sin sacrificar calidad ni estrategia.'
+					icon='meteorite'
+				/>
+			</li>
+			<li>
+				<CardFundamentals
+					name='Profesionalismo'
+					details='Cada detalle cuanta. Código limpio, diseño preciso, comunicación'
+					icon='team'
+				/>
+			</li>
+			<li>
+				<CardFundamentals
+					name='Estrategia'
+					details='Cada detalle cuanta. Código limpio, diseño preciso, comunicación'
+					icon='route'
+				/>
+			</li>
+			<li>
+				<CardFundamentals
+					name='Resultados'
+					details='Lo que importa es lo que tu negocio logra después del lanzamiento.'
+					icon='flag'
+				/>
+			</li>
+		</ul>
+	</div>
+</section>
+<div>
+	<a href="'">Explorar</a>
+	<a href='#'>Servicios</a>
+</div>
