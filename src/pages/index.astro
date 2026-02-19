@@ -1,16 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import NavBar from '@components/NavBar.astro'
-import WelcomeSection from '@components/WelcomeSection.astro'
+import WelcomeSection from '@components/home/WelcomeSection.astro'
+import ServiceFundamentals from '@components/home/SectionFundamentals.astro'
 ---
 
 <Layout>
-	<header class='fixed top-0 w-full z-10'>
-		<NavBar />
-	</header>
 	<main >
 		<article class='h-screen max-h-screen overflow-hidden px-6'>
 			<WelcomeSection />
+		</article>
+		<article>
+			<ServiceFundamentals>
 		</article>
 	</main>
 </Layout>
